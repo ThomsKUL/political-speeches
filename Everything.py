@@ -24,10 +24,6 @@ from sklearn.cluster import KMeans
 from tqdm import tqdm
 from nltk.corpus import PlaintextCorpusReader
 
-
-# In[33]:
-
-
 #nltk.download("punkt")
 database = [ ]
 corpus = PlaintextCorpusReader("./DATA", ".*\.txt")
@@ -188,11 +184,9 @@ for graph in graphs:
 app.css.append_css({
     'external_url': 'https://codepen.io/chriddyp/pen/bWLwgP.css'
 })
+
 if __name__ == '__main__':
-    app.run_server(mode="Inline", debug=True, port=8004)
-
-
-# In[ ]:
+    app.run_server(debug=True)
 
 
 
